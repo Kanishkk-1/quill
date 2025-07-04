@@ -1,41 +1,153 @@
-Quill - A Modern Block-Based Document Editor with Integrated Terminal
+Quill - Modern Block-Based Document Editor with Integrated Terminal
+<div align="center">
+🪶 A powerful, distraction-free writing environment for developers, writers, and researchers
 
-Quill is an open-source, full-stack writing platform that reimagines document editing by combining the flexibility of block-based content with the power of an integrated web terminal. Built with React, Node.js, and PostgreSQL, Quill delivers a clean, minimal interface inspired by Notion's aesthetic while offering unique developer-focused features.
+Built with React - Node.js - PostgreSQL
 
-Core Features:
+</div>
+🚀 What Makes Quill Unique
+Quill combines the flexibility of block-based editing with the power of an integrated web terminal, creating a unified workspace where you can write, code, and execute commands without leaving your document.
 
-Block-Based Editor: Modular content system with paragraphs, headings, code blocks, LaTeX, canvas drawing, and images
+🎯 Core Philosophy
+Minimal Design: Clean black-and-white interface with zero visual clutter
 
-Integrated Web Terminal: Real shell access directly in the browser with full command-line capabilities
+Developer-First: Built by developers, for developers who need both writing and terminal access
 
-Offline-First Architecture: Works completely offline with IndexedDB storage and automatic sync when online
+Offline-Ready: Works completely offline with seamless sync when online
 
-Cross-Device Sync: Edit on any device, changes sync seamlessly across all platforms
+✨ Key Features
+📝 Advanced Editor
+Block-Based Architecture: Modular content system with paragraphs, headings, code blocks, LaTeX, canvas drawing, and images
 
-Minimal Design: Clean black-and-white interface with light/dark themes, zero visual clutter
+Rich Content Support: Handle text, code, mathematical expressions, and visual elements in one unified interface
 
 Template System: Save document structures as reusable templates for quick project starts
 
-Export Capabilities: One-click export to Markdown, PDF, and other formats
+💻 Integrated Terminal
+Real Shell Access: Full command-line capabilities directly in your browser
+
+Containerized Sessions: Secure, isolated terminal environments with Docker
+
+Developer Workflow: Execute commands, run scripts, and manage projects without context switching
+
+🔄 Sync & Collaboration
+Cross-Device Sync: Edit on any device, changes sync seamlessly across all platforms
+
+Offline-First Architecture: IndexedDB storage ensures you never lose work
 
 Sharing & Publishing: Generate public read-only links for easy document sharing
 
+🎨 User Experience
+Minimal Design: Notion-inspired aesthetic with light/dark themes
+
+Export Capabilities: One-click export to Markdown, PDF, and other formats
+
 Citation Management: Academic writing support with automated citation formatting
 
+🔧 Extensibility
 Plugin Architecture: Extensible system for custom block types and features
 
 Security-First: JWT authentication, containerized terminal sessions, and role-based access control
 
-Planned Features (Post-MVP):
+🛠️ Tech Stack
+Component	Technology
+Frontend	React + JavaScript
+Backend	Node.js + Express
+Database	PostgreSQL
+Real-time	WebSockets
+Terminal	Docker + node-pty
+Storage	IndexedDB (offline)
+🗺️ Roadmap
+✅ Current Version (MVP)
+ Block-based editor with rich content support
 
-Real-time collaboration with multi-cursor editing
+ Integrated web terminal with Docker isolation
 
-AI writing assistance and content generation
+ Offline-first architecture with sync
 
-Advanced LaTeX rendering with KaTeX
+ Template system and export capabilities
 
-Enhanced export options (DOCX, custom templates)
+ Minimal UI with theme switching
 
-Team workspaces and permission management
+ Secure authentication and sharing
 
-Perfect for developers, writers, researchers, and anyone who wants a powerful, distraction-free writing environment with terminal access for development workflows.
+🔮 Planned Features (Post-MVP)
+ Real-time Collaboration with multi-cursor editing
+
+ AI Writing Assistant for content generation
+
+ Advanced LaTeX Rendering with KaTeX
+
+ Enhanced Export Options (DOCX, custom templates)
+
+ Team Workspaces and permission management
+
+🎯 Perfect For
+User Type	Use Cases
+Developers	Documentation, README files, technical writing with terminal access
+Researchers	Academic papers, citation management, data analysis workflows
+Writers	Long-form content, distraction-free writing environment
+Students	Note-taking, project documentation, coding assignments
+Teams	Collaborative documentation, shared knowledge bases
+🚀 Getting Started
+Prerequisites
+Node.js 20.19+ or 22.12+
+
+PostgreSQL 13+
+
+Docker (for terminal isolation)
+
+Quick Start
+bash
+# Clone the repository
+git clone https://github.com/yourusername/quill.git
+cd quill
+
+# Install dependencies
+npm install
+
+# Set up database
+npm run db:setup
+
+# Start development servers
+npm run dev
+Project Structure
+text
+quill/
+├── client/          # React frontend
+├── server/          # Node.js backend
+├── docs/            # Documentation
+└── docker/          # Terminal containerization
+🔒 Security
+Quill prioritizes security with:
+
+JWT Authentication for secure user sessions
+
+Containerized Terminal sessions prevent host system access
+
+Role-Based Access Control for document permissions
+
+Input Sanitization and XSS protection
+
+Secure File Upload with type validation
+
+🤝 Contributing
+We welcome contributions! Please see our Contributing Guide for details on:
+
+Code style and standards
+
+Development workflow
+
+Testing requirements
+
+Security considerations
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+<div align="center">
+Built with ❤️ for the developer community
+
+Website - Documentation - Issues
+
+</div>
