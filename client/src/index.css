@@ -1,13 +1,53 @@
-body {
+/* CSS Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+}
+
+  /* CSS Variables for Minimal Theme */
+:root {
+  /* Light theme defaults */
+  --bg: #ffffff;
+  --fg: #000000;
+  --accent: #888888;
+  
+  /* Additional variables for consistency */
+  --border: 1px solid var(--accent);
+  --border-radius: 4px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg: #121212;
+  --fg: #fafafa;
+  --accent: #888888;
+}
+
+/* Apply theme variables to body */
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
